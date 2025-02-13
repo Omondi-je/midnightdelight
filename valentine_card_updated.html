@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentine's Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>🌊 Happy Valentine's Day, Esther! 🌴</h1>
+    <p><em>My Dearest Esther,</em></p>
+    <p><em>This Valentine’s Day feels different—not because of roses or chocolates, but because of you.</em></p>
+    <p><em>Before you, my world felt like an endless night, a place where hope flickered dimly. But then you arrived, radiant and full of warmth, casting light on my darkest days. I’ll never forget the moment you told me you loved me, in that sweet, unexpected way that only you could. It caught me off guard, but it also made my heart feel something it hadn’t in so long—joy.</em></p>
+    <p><em>Esther, you have been my calm in the storm, my smile on the hardest days, my reason to believe that even broken hearts can heal. Life hasn’t been easy, and there are still battles I’m fighting. But with you by my side, I know I can face them all.</em></p>
+    <p><em>Thank you for loving me when I struggled to love myself, for believing in me when doubt clouded my mind, and for holding my hand when I felt lost. I’m not perfect, but every day, I’m working on becoming the best version of myself—for you, for us.</em></p>
+    <p><em>This Valentine’s Day, my only wish is that you’ll stay by my side, through every challenge and every triumph. One day, when the storms pass and the weight lifts, I hope we’ll be standing together, stronger than ever.</em></p>
+    <p><em>Until then, I promise to cherish you, love you, and hold you close. Thank you for being my light, my love, and my forever Valentine. While we stuff each other’s peppers.</em></p>
+    <p><em>Yours, always and forever,</em></p>
+    <p><em>Jeff Omondi.</em></p>
+    <button id="open">Open Your Surprise</button>
+    <div class="hidden-message" id="message">
+      <h2>I Love You, Esther 💖</h2>
+      <img src="https://media.giphy.com/media/W1hkbwy3CkyyIbktVq/giphy.gif" alt="Beach Heart GIF" />
+    </div>
+  </div>
+  <script>
+    document.getElementById('open').addEventListener('click', function() {
+      document.getElementById('message').style.display = 'block';
+      this.style.display = 'none';
+    });
+  </script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #87cefa, #f0e68c);
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&crop=entropy&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 600px;
+    }
+
+    h1 {
+      color: #ffa500;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ffa500;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff8c00;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .hidden-message h2 {
+      color: #ffa500;
+    }
+
+    .hidden-message img {
+      width: 200px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</body>
+</html>
